@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net;
+using System.Net.Sockets;
 using System.Threading;
 using System.Windows.Forms;
 using static Library.Program;
@@ -46,6 +48,7 @@ namespace Library
                     miSettingConnection.Enabled = true;
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
+                    miFeedback.Enabled = true;
                     break;
 
                 case 2: //гость
@@ -55,6 +58,7 @@ namespace Library
                     miExitProfile.Enabled = true;
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
+                    miFeedback.Enabled = true;
                     break;
 
                 case 3: //директор
@@ -68,6 +72,7 @@ namespace Library
                     miSettingApplication.Enabled = true;
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
+                    miFeedback.Enabled = true;
                     break;
 
                 case 4: //библиограф
@@ -85,6 +90,7 @@ namespace Library
                     miSettingApplication.Enabled = true;
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
+                    miFeedback.Enabled = true;
                     break;
 
                 case 5: //библиотекарь
@@ -101,6 +107,7 @@ namespace Library
                     miSettingApplication.Enabled = true;
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
+                    miFeedback.Enabled = true;
                     break;
             }
         }
@@ -256,6 +263,7 @@ namespace Library
                     miSettingConnection.Enabled = false;
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
+                    miFeedback.Enabled = false;
                     break;
 
                 case 2: //гость
@@ -266,6 +274,7 @@ namespace Library
                     miSettings.Enabled = false;
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
+                    miFeedback.Enabled = false;
                     break;
 
                 case 3: //директор
@@ -279,6 +288,7 @@ namespace Library
                     miSettingApplication.Enabled = false;
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
+                    miFeedback.Enabled = false;
                     break;
 
                 case 4: //библиограф
@@ -297,6 +307,7 @@ namespace Library
                     miSettingApplication.Enabled = false;
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
+                    miFeedback.Enabled = false;
                     break;
 
                 case 5: //библиотекарь
@@ -313,6 +324,7 @@ namespace Library
                     miSettingApplication.Enabled = false;
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
+                    miFeedback.Enabled = false;
                     break;
             }
             AuthorizationForm authorizationForm = new AuthorizationForm();
@@ -368,6 +380,44 @@ namespace Library
         {
             PersonalCabinet personalCabinet = new PersonalCabinet();
             personalCabinet.Show();
+        }
+
+        private void miFeedback_Click(object sender, EventArgs e)   //открытие формы обратной связи
+        {
+            if(!System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable()) //проверка физического подключения
+            {
+                MessageBox.Show(MessageUser.NoPhysicalConnectionInternet, 
+                    MessageUser.TitleLibrary, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!ConnectionAvailableInternet())
+                MessageBox.Show(MessageUser.NoConnectionInternet,
+                    MessageUser.TitleLibrary, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                FeedbackForm feedbackForm = new FeedbackForm();
+                feedbackForm.Show(this);
+            }
+        }
+
+        private bool ConnectionAvailableInternet()
+        {
+            HttpWebRequest reqFP = (HttpWebRequest)HttpWebRequest.Create("http://www.yandex.ru");
+
+            HttpWebResponse rspFP = (HttpWebResponse)reqFP.GetResponse();
+            if (HttpStatusCode.OK == rspFP.StatusCode)
+            {
+                // HTTP = 200 - Интернет безусловно есть! 
+                rspFP.Close();
+                return true;
+            }
+            else
+            {
+                // сервер вернул отрицательный ответ, возможно что инета нет
+                rspFP.Close();
+                return false;
+            }
         }
     }
 }

@@ -441,4 +441,10 @@
   <data name="GoodChange" xml:space="preserve">
     <value>Data has been successfully changed.</value>
   </data>
+  <data name="NoConnectionInternet" xml:space="preserve">
+    <value>No internet connection!\nCheck your firewall or network connection settings!</value>
+  </data>
+  <data name="NoPhysicalConnectionInternet" xml:space="preserve">
+    <value>There is no or limited physical network connection!\nCheck your network connection settings!</value>
+  </data>
 </root>

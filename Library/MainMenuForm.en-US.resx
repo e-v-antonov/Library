@@ -119,142 +119,148 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="miAuthorization.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 26</value>
+    <value>311, 26</value>
   </data>
   <data name="miAuthorization.Text" xml:space="preserve">
     <value>Authorization</value>
   </data>
   <data name="miSettingApplication.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 26</value>
+    <value>207, 26</value>
   </data>
   <data name="miSettingApplication.Text" xml:space="preserve">
     <value>Application setting</value>
   </data>
   <data name="miSettingConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 26</value>
+    <value>207, 26</value>
   </data>
   <data name="miSettingConnection.Text" xml:space="preserve">
     <value>Connection setup</value>
   </data>
   <data name="miSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 26</value>
+    <value>311, 26</value>
   </data>
   <data name="miSettings.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
   <data name="miExitProfile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 26</value>
+    <value>311, 26</value>
   </data>
   <data name="miExitProfile.Text" xml:space="preserve">
     <value>Sign out of the profile</value>
   </data>
   <data name="miExitSystem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 26</value>
+    <value>311, 26</value>
   </data>
   <data name="miExitSystem.Text" xml:space="preserve">
     <value>Shut down the information system</value>
   </data>
   <data name="miSystem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 24</value>
+    <value>72, 24</value>
   </data>
   <data name="miSystem.Text" xml:space="preserve">
     <value>System</value>
   </data>
   <data name="miIssueBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 24</value>
+    <value>93, 24</value>
   </data>
   <data name="miIssueBook.Text" xml:space="preserve">
     <value>Issue book</value>
   </data>
   <data name="miReturnBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 24</value>
+    <value>104, 24</value>
   </data>
   <data name="miReturnBook.Text" xml:space="preserve">
     <value>Return book</value>
   </data>
   <data name="miFormulars.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miFormulars.Text" xml:space="preserve">
     <value>Formulars...</value>
   </data>
   <data name="miRegistrationCardReader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miRegistrationCardReader.Text" xml:space="preserve">
     <value>Registration cards...</value>
   </data>
   <data name="miBooks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miBooks.Text" xml:space="preserve">
     <value>Books...</value>
   </data>
   <data name="miWriterBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miWriterBook.Text" xml:space="preserve">
     <value>Writers...</value>
   </data>
   <data name="miPublishingBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miPublishingBook.Text" xml:space="preserve">
     <value>Book publishings...</value>
   </data>
   <data name="miGenreBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miGenreBook.Text" xml:space="preserve">
     <value>Genre books...</value>
   </data>
   <data name="miUsers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>221, 26</value>
   </data>
   <data name="miUsers.Text" xml:space="preserve">
     <value>Users...</value>
   </data>
   <data name="miHandbook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 24</value>
+    <value>95, 24</value>
   </data>
   <data name="miHandbook.Text" xml:space="preserve">
     <value>Handbooks</value>
   </data>
   <data name="miCreatedRegistrationCardAndFormular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 26</value>
+    <value>562, 26</value>
   </data>
   <data name="miCreatedRegistrationCardAndFormular.Text" xml:space="preserve">
     <value>Formation of the registration card and the reader's form</value>
   </data>
   <data name="miCreateActs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 26</value>
+    <value>562, 26</value>
   </data>
   <data name="miCreateActs.Text" xml:space="preserve">
     <value>Formation of acts of acceptance and exclusion of books</value>
   </data>
   <data name="miCreateInventoryBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 26</value>
+    <value>562, 26</value>
   </data>
   <data name="miCreateInventoryBook.Text" xml:space="preserve">
     <value>Generate document "Inventory book"</value>
   </data>
   <data name="miCreateSummaryBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 26</value>
+    <value>562, 26</value>
   </data>
   <data name="miCreateSummaryBook.Text" xml:space="preserve">
     <value>Generate document "the Book of summary account of underlying fund"</value>
   </data>
   <data name="miDocument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 24</value>
+    <value>168, 24</value>
   </data>
   <data name="miDocument.Text" xml:space="preserve">
     <value>Formation documents</value>
   </data>
-  <data name="личныйКабинетToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+  <data name="miPersonalCabinet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 24</value>
   </data>
-  <data name="личныйКабинетToolStripMenuItem.Text" xml:space="preserve">
-    <value>Personal cabinet</value>
+  <data name="miPersonalCabinet.Text" xml:space="preserve">
+    <value>Personal area</value>
+  </data>
+  <data name="miFeedback.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
+  </data>
+  <data name="miFeedback.Text" xml:space="preserve">
+    <value>Feedback</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

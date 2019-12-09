@@ -441,4 +441,10 @@
   <data name="GoodChange" xml:space="preserve">
     <value>Данные были успешно изменены.</value>
   </data>
+  <data name="NoConnectionInternet" xml:space="preserve">
+    <value>Нет подключения к интернету!\nПроверьте ваш фаервол или настройки сетевого подключения!</value>
+  </data>
+  <data name="NoPhysicalConnectionInternet" xml:space="preserve">
+    <value>Отсутствует или ограниченно физическое подключение к сети!\nПроверьте настройки вашего сетевого подключения!</value>
+  </data>
 </root>

@@ -19,7 +19,7 @@ namespace Library {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class MessageUser {
@@ -597,6 +597,24 @@ namespace Library {
         internal static string NoConnection {
             get {
                 return ResourceManager.GetString("NoConnection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Нет подключения к интернету!\nПроверьте ваш фаервол или настройки сетевого подключения!.
+        /// </summary>
+        internal static string NoConnectionInternet {
+            get {
+                return ResourceManager.GetString("NoConnectionInternet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Отсутствует или ограниченно физическое подключение к сети!\nПроверьте настройки вашего сетевого подключения!.
+        /// </summary>
+        internal static string NoPhysicalConnectionInternet {
+            get {
+                return ResourceManager.GetString("NoPhysicalConnectionInternet", resourceCulture);
             }
         }
         

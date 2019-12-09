@@ -53,6 +53,7 @@
             this.miCreateInventoryBook = new System.Windows.Forms.ToolStripMenuItem();
             this.miCreateSummaryBook = new System.Windows.Forms.ToolStripMenuItem();
             this.miPersonalCabinet = new System.Windows.Forms.ToolStripMenuItem();
+            this.miFeedback = new System.Windows.Forms.ToolStripMenuItem();
             this.sstInformation = new System.Windows.Forms.StatusStrip();
             this.lbsstConnection = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip.SuspendLayout();
@@ -69,7 +70,8 @@
             this.miReturnBook,
             this.miHandbook,
             this.miDocument,
-            this.miPersonalCabinet});
+            this.miPersonalCabinet,
+            this.miFeedback});
             resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
@@ -228,6 +230,12 @@
             this.miPersonalCabinet.Name = "miPersonalCabinet";
             this.miPersonalCabinet.Click += new System.EventHandler(this.miPersonalCabinet_Click);
             // 
+            // miFeedback
+            // 
+            resources.ApplyResources(this.miFeedback, "miFeedback");
+            this.miFeedback.Name = "miFeedback";
+            this.miFeedback.Click += new System.EventHandler(this.miFeedback_Click);
+            // 
             // sstInformation
             // 
             this.sstInformation.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -290,6 +298,7 @@
         private System.Windows.Forms.ToolStripMenuItem miSettingApplication;
         private System.Windows.Forms.ToolStripMenuItem miSettingConnection;
         private System.Windows.Forms.ToolStripMenuItem miPersonalCabinet;
+        private System.Windows.Forms.ToolStripMenuItem miFeedback;
     }
 }
 
