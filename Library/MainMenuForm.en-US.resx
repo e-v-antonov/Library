@@ -262,6 +262,12 @@
   <data name="miFeedback.Text" xml:space="preserve">
     <value>Feedback</value>
   </data>
+  <data name="miStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 24</value>
+  </data>
+  <data name="miStatistics.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA

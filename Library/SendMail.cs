@@ -48,12 +48,12 @@ namespace Library
 
                 smtp.Send(mail);
 
-                MessageBox.Show("Сообщение успешно отправлено!", "Библиотека", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(MessageUser.MessageSent, MessageUser.TitleLibrary, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 file.Clear();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Библиотека", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.ToString(), MessageUser.TitleLibrary, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

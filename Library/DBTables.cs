@@ -20,6 +20,10 @@ namespace Library
         public DataTable DTInvenoryBook = new DataTable("Inventory_Book");
         public DataTable DTSummaryBook = new DataTable("Summary_Book");
         public DataTable DTPersonalCabinet = new DataTable("Personal Cabinet");
+        public DataTable DTStatisticsBookReturned = new DataTable("StatisticsBookReturned");
+        public DataTable DTStatisticsAgeReader = new DataTable("StatisticsAgeReader");
+        public DataTable DTStatisticsPublicationDate = new DataTable("StatisticsPublicationDate");
+        public DataTable DTStatisticsWriterBook = new DataTable("StatisticsWriterBook");
         public string QRGenre = "select [ID_Genre_Book], [Genre] from [dbo].[Genre_Book] where [Genre_Book_Logical_Delete] = 0";
         public string QRPublishing = "select [ID_Publishing_Book],[Publishing] from [dbo].[Publishing_Book] where [Publishing_Book_Logical_Delete] = 0";
         public string QRWriterBook = "select [ID_Writer], [Surname_Writer], [Name_Writer], [Patronymic_Writer]  from [dbo].[Writer_Book] where [Writer_Book_Logical_Delete] = 0";
@@ -66,7 +70,17 @@ namespace Library
         private string QRPersonalCabinet = "select [Surname_User], [Name_User], [Patronymic_User], CONVERT([nvarchar] (16), " +
             "DECRYPTBYKEY([Login_User])), CONVERT([nvarchar] (16), DECRYPTBYKEY([Password_User])) from [dbo].[User] " +
             "where CONVERT([nvarchar] (16), DECRYPTBYKEY([Login_User])) = '" + AuthorizationForm.LoginUser + "'";
-         public SqlDependency dependency = new SqlDependency();
+        private string QRStatisticsBookReturned = "select [Book_Returned], count(*) as [Count_Book] from [dbo].[Formular_Reader] where " +
+            "[Formular_Reader_Logical_Delete] = 0 group by [Book_Returned]";
+        private string QRStatisticsAgeReader = "select case when MONTH(GETDATE()) >= MONTH([Birthday_Reader]) AND DAY(GETDATE()) >= " +
+            "DAY([Birthday_Reader]) then YEAR(GETDATE()) - YEAR([Birthday_Reader]) else (YEAR(GETDATE()) - YEAR([Birthday_Reader]) - 1) end " +
+            "as [Age], count(*) from [dbo].[Registration_Card_Reader] where [Registration_Card_Reader_Logical_Delete] = 0 " +
+            "group by case when MONTH(GETDATE()) >= MONTH([Birthday_Reader]) AND DAY(GETDATE()) >= DAY([Birthday_Reader]) " +
+            "then YEAR(GETDATE()) - YEAR([Birthday_Reader]) else (YEAR(GETDATE()) - YEAR([Birthday_Reader]) - 1) end";
+        private string QRStatisticsPublicationDate = "select [Publication_Date], count(*) from [dbo].[Book] " +
+            "where [Book_Logical_Delete] = 0 group by [Publication_Date]";
+        private string QRStatisticsWriterBook = "select [Писатель], count(*) from [dbo].[Books_List] group by [Писатель]";
+        public SqlDependency dependency = new SqlDependency();
  
 
         private void DataTableFill(DataTable table, string query)   //выгрузка таблицы
@@ -199,6 +213,26 @@ namespace Library
         public void DTPersonalCabinetFill() //таблица для личного кабинета
         {
             DataTableFill(DTPersonalCabinet, QRPersonalCabinet);
+        }
+
+        public void DTStatisticsBookReturnedFill()  //таблица статистики выданных книг
+        {
+            DataTableFill(DTStatisticsBookReturned, QRStatisticsBookReturned);
+        }
+
+        public void DTStatisticsAgeReaderFill() //таблица статистики возраста читателей
+        {
+            DataTableFill(DTStatisticsAgeReader, QRStatisticsAgeReader);
+        }
+
+        public void DTStatisticsPublicationDateFill()   //таблица статистики года издания книг
+        {
+            DataTableFill(DTStatisticsPublicationDate, QRStatisticsPublicationDate);
+        }
+
+        public void DTStatisticsWriterBookFill()    //таблица статистики авторов книг//показ статистики по 
+        {
+            DataTableFill(DTStatisticsWriterBook, QRStatisticsWriterBook);
         }
     }
 }

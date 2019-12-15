@@ -34,7 +34,7 @@ namespace Library
         {
             if (!Regex.IsMatch(tbEmail.Text, constraintEmail, RegexOptions.None))
             {
-                MessageBox.Show("неправильный адрес электронной почты! сообщение не может быть отправлено!");
+                MessageBox.Show(MessageUser.ErrorEmail, MessageUser.TitleError, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

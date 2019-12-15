@@ -49,6 +49,7 @@ namespace Library
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
                     miFeedback.Enabled = true;
+                    miStatistics.Enabled = true;
                     break;
 
                 case 2: //гость
@@ -73,6 +74,7 @@ namespace Library
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
                     miFeedback.Enabled = true;
+                    miStatistics.Enabled = true;
                     break;
 
                 case 4: //библиограф
@@ -91,6 +93,7 @@ namespace Library
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
                     miFeedback.Enabled = true;
+                    miStatistics.Enabled = true;
                     break;
 
                 case 5: //библиотекарь
@@ -108,6 +111,7 @@ namespace Library
                     miAuthorization.Enabled = false;
                     miPersonalCabinet.Enabled = true;
                     miFeedback.Enabled = true;
+                    miStatistics.Enabled = true;
                     break;
             }
         }
@@ -264,6 +268,7 @@ namespace Library
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
                     miFeedback.Enabled = false;
+                    miStatistics.Enabled = false;
                     break;
 
                 case 2: //гость
@@ -289,6 +294,7 @@ namespace Library
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
                     miFeedback.Enabled = false;
+                    miStatistics.Enabled = false;
                     break;
 
                 case 4: //библиограф
@@ -308,6 +314,7 @@ namespace Library
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
                     miFeedback.Enabled = false;
+                    miStatistics.Enabled = false;
                     break;
 
                 case 5: //библиотекарь
@@ -325,6 +332,7 @@ namespace Library
                     miAuthorization.Enabled = true;
                     miPersonalCabinet.Enabled = false;
                     miFeedback.Enabled = false;
+                    miStatistics.Enabled = false;
                     break;
             }
             AuthorizationForm authorizationForm = new AuthorizationForm();
@@ -401,7 +409,7 @@ namespace Library
             }
         }
 
-        private bool ConnectionAvailableInternet()
+        private bool ConnectionAvailableInternet()  //проверка интернета
         {
             HttpWebRequest reqFP = (HttpWebRequest)HttpWebRequest.Create("http://www.yandex.ru");
 
@@ -418,6 +426,12 @@ namespace Library
                 rspFP.Close();
                 return false;
             }
+        }
+
+        private void miStatistics_Click(object sender, EventArgs e) //открытие формы статистики
+        {
+            StatisticsForm statisticsForm = new StatisticsForm();
+            statisticsForm.Show(this);
         }
     }
 }

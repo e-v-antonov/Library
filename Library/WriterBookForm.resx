@@ -681,6 +681,9 @@
   <data name="dgvWriterBook.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 48</value>
   </data>
+  <data name="dgvWriterBook.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
   <data name="dgvWriterBook.Size" type="System.Drawing.Size, System.Drawing">
     <value>800, 304</value>
   </data>

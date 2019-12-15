@@ -121,113 +121,13 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="miSystem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="miSystem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 26</value>
-  </data>
-  <data name="miSystem.Text" xml:space="preserve">
-    <value>Система</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="miIssueBook.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miIssueBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 26</value>
-  </data>
-  <data name="miIssueBook.Text" xml:space="preserve">
-    <value>Выдача книги</value>
-  </data>
-  <data name="miReturnBook.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miReturnBook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 26</value>
-  </data>
-  <data name="miReturnBook.Text" xml:space="preserve">
-    <value>Возврат книги</value>
-  </data>
-  <data name="miHandbook.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miHandbook.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="miHandbook.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 26</value>
-  </data>
-  <data name="miHandbook.Text" xml:space="preserve">
-    <value>Справочники</value>
-  </data>
-  <data name="miDocument.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miDocument.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
-  </data>
-  <data name="miDocument.Text" xml:space="preserve">
-    <value>Формирование документов</value>
-  </data>
-  <data name="miPersonalCabinet.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miPersonalCabinet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 26</value>
-  </data>
-  <data name="miPersonalCabinet.Text" xml:space="preserve">
-    <value>Личный кабинет</value>
-  </data>
-  <data name="miFeedback.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miFeedback.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 24</value>
-  </data>
-  <data name="miFeedback.Text" xml:space="preserve">
-    <value>Обратная связь</value>
-  </data>
-  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="menuStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 2, 0, 2</value>
-  </data>
-  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>945, 28</value>
-  </data>
-  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
-    <value>menuStrip</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="miAuthorization.Size" type="System.Drawing.Size, System.Drawing">
     <value>402, 26</value>
   </data>
   <data name="miAuthorization.Text" xml:space="preserve">
     <value>Авторизация</value>
   </data>
-  <data name="miSettings.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="miSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>402, 26</value>
-  </data>
-  <data name="miSettings.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="miSettingApplication.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -246,6 +146,15 @@
   <data name="miSettingConnection.Text" xml:space="preserve">
     <value>Настройки подключения</value>
   </data>
+  <data name="miSettings.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>402, 26</value>
+  </data>
+  <data name="miSettings.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
   <data name="miExitProfile.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -260,6 +169,33 @@
   </data>
   <data name="miExitSystem.Text" xml:space="preserve">
     <value>Завершить работу информационной системы</value>
+  </data>
+  <data name="miSystem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="miSystem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 24</value>
+  </data>
+  <data name="miSystem.Text" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="miIssueBook.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miIssueBook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 24</value>
+  </data>
+  <data name="miIssueBook.Text" xml:space="preserve">
+    <value>Выдача книги</value>
+  </data>
+  <data name="miReturnBook.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miReturnBook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 24</value>
+  </data>
+  <data name="miReturnBook.Text" xml:space="preserve">
+    <value>Возврат книги</value>
   </data>
   <data name="miFormulars.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -324,6 +260,18 @@
   <data name="miUsers.Text" xml:space="preserve">
     <value>Пользователи...</value>
   </data>
+  <data name="miHandbook.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miHandbook.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 9pt</value>
+  </data>
+  <data name="miHandbook.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 24</value>
+  </data>
+  <data name="miHandbook.Text" xml:space="preserve">
+    <value>Справочники</value>
+  </data>
   <data name="miCreatedRegistrationCardAndFormular.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -360,9 +308,76 @@
   <data name="miCreateSummaryBook.Text" xml:space="preserve">
     <value>Сформировать документ "Книга суммарного учета основного фонда"</value>
   </data>
+  <data name="miDocument.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 24</value>
+  </data>
+  <data name="miDocument.Text" xml:space="preserve">
+    <value>Формирование документов</value>
+  </data>
+  <data name="miPersonalCabinet.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miPersonalCabinet.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 24</value>
+  </data>
+  <data name="miPersonalCabinet.Text" xml:space="preserve">
+    <value>Личный кабинет</value>
+  </data>
+  <data name="miFeedback.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miFeedback.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 24</value>
+  </data>
+  <data name="miFeedback.Text" xml:space="preserve">
+    <value>Обратная связь</value>
+  </data>
+  <data name="miStatistics.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="miStatistics.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 24</value>
+  </data>
+  <data name="miStatistics.Text" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="menuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1136, 28</value>
+  </data>
+  <data name="menuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Name" xml:space="preserve">
+    <value>menuStrip</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="sstInformation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>152, 17</value>
   </metadata>
+  <data name="lbsstConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 20</value>
+  </data>
+  <data name="lbsstConnection.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
   <data name="sstInformation.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 424</value>
   </data>
@@ -370,7 +385,7 @@
     <value>1, 0, 12, 0</value>
   </data>
   <data name="sstInformation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>945, 26</value>
+    <value>1136, 26</value>
   </data>
   <data name="sstInformation.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -390,12 +405,6 @@
   <data name="&gt;&gt;sstInformation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="lbsstConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 20</value>
-  </data>
-  <data name="lbsstConnection.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -403,7 +412,7 @@
     <value>7, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>945, 450</value>
+    <value>1136, 450</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8pt</value>
@@ -1688,6 +1697,12 @@
     <value>miFeedback</value>
   </data>
   <data name="&gt;&gt;miFeedback.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miStatistics.Name" xml:space="preserve">
+    <value>miStatistics</value>
+  </data>
+  <data name="&gt;&gt;miStatistics.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbsstConnection.Name" xml:space="preserve">

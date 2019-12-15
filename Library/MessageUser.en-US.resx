@@ -447,4 +447,10 @@
   <data name="NoPhysicalConnectionInternet" xml:space="preserve">
     <value>There is no or limited physical network connection!\nCheck your network connection settings!</value>
   </data>
+  <data name="ErrorEmail" xml:space="preserve">
+    <value>Invalid email address! Message cannot be sent!</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Message sent successfully!</value>
+  </data>
 </root>

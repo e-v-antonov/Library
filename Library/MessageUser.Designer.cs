@@ -448,6 +448,15 @@ namespace Library {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Неправильный адрес электронной почты! сообщение не может быть отправлено!.
+        /// </summary>
+        internal static string ErrorEmail {
+            get {
+                return ResourceManager.GetString("ErrorEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на  Поля Год издания, Количество страниц, Стоимость экземпляра, Общее количество экземпляров должны быть заполнены целыми числами! Проверьте правильность ввода данных!.
         /// </summary>
         internal static string ErrorInsertUpdateBook {
@@ -552,6 +561,15 @@ namespace Library {
         internal static string Login {
             get {
                 return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Сообщение успешно отправлено!.
+        /// </summary>
+        internal static string MessageSent {
+            get {
+                return ResourceManager.GetString("MessageSent", resourceCulture);
             }
         }
         

@@ -447,4 +447,10 @@
   <data name="NoPhysicalConnectionInternet" xml:space="preserve">
     <value>Отсутствует или ограниченно физическое подключение к сети!\nПроверьте настройки вашего сетевого подключения!</value>
   </data>
+  <data name="ErrorEmail" xml:space="preserve">
+    <value>Неправильный адрес электронной почты! сообщение не может быть отправлено!</value>
+  </data>
+  <data name="MessageSent" xml:space="preserve">
+    <value>Сообщение успешно отправлено!</value>
+  </data>
 </root>
